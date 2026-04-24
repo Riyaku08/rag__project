@@ -4,7 +4,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings, OpenAI
 
 # Title
-st.title("📄 RAG Chatbot (Resume आधारित)")
+st.title(" RAG Chatbot")
 
 # API key
 api_key = "your api key"
