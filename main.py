@@ -2,23 +2,23 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings, OpenAI
 
-# 🔑 API key (yaha apni key daalo)
+# API key 
 api_key = "your api key"
 
-# 📄 Load PDF
+# Load PDF
 loader = PyPDFLoader("data.pdf")
 documents = loader.load()
 
-# 🧠 Create embeddings
+# Create embeddings
 embeddings = OpenAIEmbeddings(api_key=api_key)
 
-# 💾 Store in vector DB
+# Store in vector DB
 db = FAISS.from_documents(documents, embeddings)
 
-# 🤖 LLM
+# LLM
 llm = OpenAI(api_key=api_key)
 
-# 🔁 Chat loop
+# Chat loop
 while True:
     query = input("\nAsk something (type 'exit' to quit): ")
 
