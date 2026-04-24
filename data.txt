@@ -1,0 +1,4 @@
+Riya is an MCA graduate.
+She is learning AI and Prompt Engineering.
+She has built chatbot projects using LangChain.
+She wants to switch into AI field.
